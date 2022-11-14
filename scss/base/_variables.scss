@@ -1,0 +1,40 @@
+@use '../utils' as u;
+
+// Fonts & typography
+$font-stack: 'Inter', sans-serif;
+
+$fw-reg: 400;
+$fw-bold: 700;
+$fw-extrabold: 800;
+
+$fs-regular: u.rem(15);
+$fs-heading-mobile: u.rem(40);
+$fs-heading-Desktop: u.rem(56);
+
+$fs-smallHeading-mobile: u.rem(32);
+$fs-smallHeading-desktop: u.rem(40);
+
+$fs-contentHeading: u.rem(20);
+
+$fs-smallContentHeading: u.rem(18);
+$fs-numberHeading: u.rem(30);
+
+$fs-button: u.rem(14);
+
+// Color
+$soft-orange: hsl(35 77% 62%);
+$soft-red: hsl(5 85% 63%);
+$off-white: hsl(36 100% 99%);
+$grayish-blue: hsl(233 8% 79%);
+$darkGrayish-blue: hsl(236 13% 42%);
+$veryDark-blue: hsl(240 100% 5%);
+
+$main-background: $off-white;
+$blur-background: hsl(36 100% 99% /0.2);
+$dark-background: $veryDark-blue;
+$button-background: $soft-red;
+
+$color-paragraph: $darkGrayish-blue;
+$color-white: $off-white;
+$color-dark: $veryDark-blue;
+$color-orange: $soft-orange;

@@ -1,0 +1,174 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+/* Set core body defaults */
+body {
+  text-rendering: optimizeSpeed;
+  background-color: hsl(36deg, 100%, 99%);
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 0.9375rem;
+  padding: 1rem;
+}
+@media (min-width: 56.25em) {
+  body {
+    padding: 4.8125rem;
+  }
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+*::before,
+*::after {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.flex {
+  display: flex;
+  gap: var(--gap, 2.4375rem);
+}
+
+.grid {
+  display: grid;
+  gap: var(--gap, 2.4375rem);
+}
+
+.yellow-text {
+  color: hsl(35deg, 77%, 62%);
+}
+
+.white-text {
+  color: hsl(36deg, 100%, 99%);
+}
+
+.dark-text {
+  color: hsl(240deg, 100%, 5%);
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.extrabold {
+  font-weight: 800;
+}
+
+.primary-header {
+  margin-inline: 5.5rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 56.24875em) {
+  .primary-header {
+    margin-inline: 0;
+    margin: 1rem;
+  }
+}
+@media (max-width: 56.24875em) {
+  .primary-header .logo {
+    width: 2.8125rem;
+    height: 1.75rem;
+  }
+}
+.primary-header .mobile-nav-toggle {
+  display: none;
+}
+@media (max-width: 56.24875em) {
+  .primary-header .mobile-nav-toggle {
+    display: block;
+    position: absolute;
+    z-index: 9999;
+    width: 3rem;
+    aspect-ratio: 1;
+    top: 3rem;
+    right: 1.5rem;
+    background-image: url(/assets/images/icon-menu.svg);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+  }
+  .primary-header .mobile-nav-toggle[aria-expanded=true] {
+    background-image: url(/assets/images/icon-menu-close.svg);
+  }
+}
+.primary-header .primary-navigation {
+  list-style: none;
+}
+@media (max-width: 56.24875em) {
+  .primary-header .primary-navigation {
+    position: fixed;
+    z-index: 1000;
+    inset: 0 0 0 30%;
+    flex-direction: column;
+    padding: 9.3125rem 1.5625rem;
+    background-color: hsla(36deg, 100%, 99%, 0.2);
+    -webkit-backdrop-filter: blur(1rem);
+            backdrop-filter: blur(1rem);
+    transform: translateX(100%);
+    transition: transform 350ms ease-out;
+  }
+  .primary-header .primary-navigation[data-visible=true] {
+    transform: translateX(0%);
+  }
+}
+.primary-header .primary-navigation a {
+  text-decoration: none;
+  color: hsl(236deg, 13%, 42%);
+}
+@media (max-width: 43.74875em) {
+  .primary-header .primary-navigation a {
+    color: hsl(240deg, 100%, 5%);
+  }
+}/*# sourceMappingURL=style.css.map */

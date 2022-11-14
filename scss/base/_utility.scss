@@ -1,0 +1,32 @@
+@use '../utils' as u;
+@use 'variables' as v;
+
+.flex {
+  display: flex;
+  gap: var(--gap, u.rem(39));
+}
+
+.grid {
+  display: grid;
+  gap: var(--gap, u.rem(39));
+}
+
+.yellow-text {
+  color: v.$color-orange;
+}
+
+.white-text {
+  color: v.$color-white;
+}
+
+.dark-text {
+  color: v.$color-dark;
+}
+
+.bold {
+  font-weight: v.$fw-bold;
+}
+
+.extrabold {
+  font-weight: v.$fw-extrabold;
+}
