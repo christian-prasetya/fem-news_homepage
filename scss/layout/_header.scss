@@ -11,6 +11,7 @@
   @include u.breakpoint-down(medium) {
     margin-inline: 0;
     margin: u.rem(16);
+    width: u.rem(1110);
   }
 
   .logo {

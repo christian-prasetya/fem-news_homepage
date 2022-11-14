@@ -37,6 +37,7 @@ body {
   font-family: v.$font-stack;
   font-weight: v.$fw-reg;
   font-size: v.$fs-regular;
+  color: v.$color-paragraph;
   padding: u.rem(16);
 
   @include u.breakpoint(large) {
