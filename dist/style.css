@@ -155,9 +155,7 @@ svg {
     inset: 0 0 0 30%;
     flex-direction: column;
     padding: 9.3125rem 1.5625rem;
-    background-color: hsla(36deg, 100%, 99%, 0.2);
-    -webkit-backdrop-filter: blur(1rem);
-            backdrop-filter: blur(1rem);
+    background-color: hsl(36deg, 100%, 99%);
     transform: translateX(100%);
     transition: transform 350ms ease-out;
   }
@@ -168,19 +166,27 @@ svg {
 .primary-header .primary-navigation a {
   text-decoration: none;
   color: hsl(236deg, 13%, 42%);
+  cursor: pointer;
+  font-size: 1rem;
 }
 @media (max-width: 43.74875em) {
   .primary-header .primary-navigation a {
     color: hsl(240deg, 100%, 5%);
   }
 }
+.primary-header .primary-navigation a:hover {
+  color: hsl(5deg, 85%, 63%);
+  font-weight: 800;
+  border-bottom: 0.1875rem solid hsl(5deg, 85%, 63%);
+  padding-bottom: 0.1875rem;
+}
 
 .primary-content {
   margin-bottom: 4rem;
+  margin-inline: auto;
 }
 @media (min-width: 56.25em) {
   .primary-content {
-    width: 69.375rem;
     margin-top: 2.6875rem;
     margin-inline: 5.5rem;
     grid-template-columns: repeat(3, 1fr);
@@ -228,6 +234,14 @@ svg {
   border: 0;
   width: 11.5625rem;
   height: 3rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.875rem;
+  letter-spacing: 0.3125rem;
+}
+.primary-content .hero-section article button:hover {
+  background-color: hsl(240deg, 100%, 5%);
 }
 .primary-content .news {
   margin-top: 2rem;
@@ -257,9 +271,14 @@ svg {
 .primary-content .news-list:last-child {
   margin-bottom: 0;
 }
-.primary-content .news-list h3 {
+.primary-content .news-list a {
+  display: block;
   font-size: 1.25rem;
   margin-bottom: 0.875rem;
+  text-decoration: none;
+}
+.primary-content .news-list a:hover {
+  color: hsl(5deg, 85%, 63%);
 }
 @media (min-width: 56.25em) {
   .primary-content .article-list {
@@ -281,7 +300,12 @@ svg {
   font-size: 1.875rem;
   margin-bottom: 1.25rem;
 }
-.primary-content .article-list .list__content h3 {
+.primary-content .article-list .list__content a {
+  display: block;
   font-size: 1.125rem;
   margin-bottom: 1rem;
+  text-decoration: none;
+}
+.primary-content .article-list .list__content a:hover {
+  color: hsl(5deg, 85%, 63%);
 }/*# sourceMappingURL=style.css.map */

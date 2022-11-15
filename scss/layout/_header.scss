@@ -54,8 +54,7 @@
       inset: 0 0 0 30%;
       flex-direction: column;
       padding: u.rem(149) u.rem(25);
-      background-color: b.$blur-background;
-      backdrop-filter: blur(u.rem(16));
+      background-color: b.$main-background;
       transform: translateX(100%);
       transition: transform 350ms ease-out;
 
@@ -67,9 +66,18 @@
     a {
       text-decoration: none;
       color: b.$color-paragraph;
+      cursor: pointer;
+      font-size: u.rem(16);
 
       @include u.breakpoint-down(small) {
         color: b.$color-dark;
+      }
+
+      &:hover {
+        color: b.$soft-red;
+        font-weight: b.$fw-extrabold;
+        border-bottom: u.rem(3) solid b.$soft-red;
+        padding-bottom: u.rem(3);
       }
     }
   }

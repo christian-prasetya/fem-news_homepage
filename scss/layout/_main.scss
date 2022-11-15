@@ -3,9 +3,10 @@
 
 .primary-content {
   margin-bottom: u.rem(64);
+  margin-inline: auto;
 
   @include u.breakpoint(large) {
-    width: u.rem(1110);
+    // width: u.rem(1110);
     margin-top: u.rem(43);
     margin-inline: u.rem(88);
     grid-template-columns: repeat(3, 1fr);
@@ -53,6 +54,15 @@
         border: 0;
         width: u.rem(185);
         height: u.rem(48);
+        cursor: pointer;
+        text-transform: uppercase;
+        font-weight: b.$fw-bold;
+        font-size: u.rem(14);
+        letter-spacing: u.rem(5);
+
+        &:hover {
+          background-color: b.$dark-background;
+        }
 
       }
     }
@@ -86,9 +96,15 @@
         margin-bottom: 0;
       }
 
-      h3 {
+      a {
+        display: block;
         font-size: b.$fs-contentHeading;
         margin-bottom: u.rem(14);
+        text-decoration: none;
+
+        &:hover {
+          color: b.$soft-red;
+        }
       }
     }
   }
@@ -117,9 +133,15 @@
           margin-bottom: u.rem(20);
         }
 
-        h3 {
+        a {
+          display: block;
           font-size: b.$fs-smallContentHeading;
           margin-bottom: u.rem(16);
+          text-decoration: none;
+
+          &:hover {
+            color: b.$soft-red;
+          }
         }
 
       }
