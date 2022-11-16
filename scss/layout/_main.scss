@@ -49,16 +49,15 @@
         }
       }
 
-      button {
+      a {
         background-color: b.$button-background;
-        border: 0;
-        width: u.rem(185);
-        height: u.rem(48);
         cursor: pointer;
         text-transform: uppercase;
         font-weight: b.$fw-bold;
         font-size: u.rem(14);
         letter-spacing: u.rem(5);
+        text-decoration: none;
+        padding: u.rem(19) u.rem(32);
 
         &:hover {
           background-color: b.$dark-background;

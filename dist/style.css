@@ -40,6 +40,8 @@ body {
 @media (min-width: 56.25em) {
   body {
     padding: 4.8125rem;
+    max-width: 90rem;
+    margin: 0 auto;
   }
 }
 
@@ -229,18 +231,17 @@ svg {
     margin-bottom: 2.5rem;
   }
 }
-.primary-content .hero-section article button {
+.primary-content .hero-section article a {
   background-color: hsl(5deg, 85%, 63%);
-  border: 0;
-  width: 11.5625rem;
-  height: 3rem;
   cursor: pointer;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 0.875rem;
   letter-spacing: 0.3125rem;
+  text-decoration: none;
+  padding: 1.1875rem 2rem;
 }
-.primary-content .hero-section article button:hover {
+.primary-content .hero-section article a:hover {
   background-color: hsl(240deg, 100%, 5%);
 }
 .primary-content .news {

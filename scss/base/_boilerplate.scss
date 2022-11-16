@@ -42,6 +42,8 @@ body {
 
   @include u.breakpoint(large) {
     padding: u.rem(77);
+    max-width: u.rem(1440);
+    margin: 0 auto;
   }
 }
 
